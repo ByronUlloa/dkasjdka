@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding" (click)="verMenu()"></ion-icon>
+    <ion-title>
+      Asignaturas
+    </ion-title>
+    <ion-icon slot="end" name="person-circle-outline" class="ion-padding" size="large"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+    <ion-item *ngFor="let item of [0]" >
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>2022_2_CO_APY4461_23811490_PCT</ion-card-subtitle>
+          <ion-card-title>Portafolio</ion-card-title>
+          <ion-card-subtitle>Docente: Alejandro Sepulveda</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-button color="warning" size="small" [routerLink]="['/list']">Revisa lista de alumnos</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+</ion-content>

@@ -1,0 +1,23 @@
+
+<ion-content>
+  <div id="header">
+    <h1>INICIAR SESIÓN</h1>
+  </div>
+
+    <form id="foring">
+    <ion-item id="forming">
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input  required [(ngModel)]="credenciales.correo"[ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+    <ion-item id="forming">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="credenciales.password"[ngModelOptions]="{standalone: true}" type="password"></ion-input>
+  </ion-item>
+  </form>
+  <form>
+    <center><ion-button  color="warning"  (click)="login()">Ingresar</ion-button>
+    <ion-button  color="warning"  [routerLink]="['/registro']">Registrar</ion-button></center>
+    <center><ion-button color="warning"  [routerLink]="['/sign']">Olvide mi Contraseña</ion-button></center>
+  </form>
+</ion-content>
+

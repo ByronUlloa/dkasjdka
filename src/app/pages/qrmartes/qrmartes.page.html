@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding" (click)="verMenu()"></ion-icon>
+    <ion-title>
+      ACCESO
+    </ion-title>
+    <ion-icon slot="end" name="person-circle-outline" class="ion-padding" size="large"></ion-icon>
+  </ion-toolbar>
+  <ion-row class="ion-align-items-center">
+    <ion-col size="2">
+      <ion-button color="primary" [routerLink]="['/qracces']">
+        Lu
+      </ion-button>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary" [routerLink]="['/qrmartes']">
+        Ma
+      </ion-button>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary">
+        Mi
+      </ion-button>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary">
+        Ju
+      </ion-button>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary">
+        Vi
+      </ion-button>
+    </ion-col>
+    <ion-col size="2">
+      <ion-button color="primary">
+        Sa
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content>
+  <ion-text class="ion-text-center">
+    <h1>QR Asistencia <br>Martes</h1>
+  </ion-text>
+
+  <ion-item *ngFor="let item of [0]" >
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Matematicas</ion-card-title>
+        <ion-card-subtitle>Horario ingreso: 09:51 - 10:40</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-button color="tertiary" size="small" [routerLink]="['/qrfinal']">Mostrar QR asistencia</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+  <ion-item *ngFor="let item of [0]" >
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Lenguaje</ion-card-title>
+        <ion-card-subtitle>Horario ingreso: 17:11 - 19:30</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+          <ion-button color="tertiary" size="small" [routerLink]="['/qrfinal']">Mostrar QR asistencia</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-content>
